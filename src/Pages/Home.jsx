@@ -6,12 +6,14 @@ import Categories from '../Components/Categories'
 import StatsSection from '../Components/StatsSection'
 import Testimonials from '../Components/Testimonials'
 import FAQs from '../Components/FAQs'
-import Footer from '../Components/Footer'
 import CallToAction  from '../Components/CallToAction'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
     <div>
+      <Navbar/>
       <Hero />
       <FeatureSection/>
       <TopRatedDoctors />
@@ -20,7 +22,7 @@ const Home = () => {
       <Testimonials />
       <FAQs />
       <CallToAction />
-      <Footer />
+      <Footer/> 
     </div>
   )
 }

@@ -1,51 +1,16 @@
 import React from "react";
-import {
-  Star,
-  Clock3,
-  MapPin,
-  BadgeCheck,
-  ArrowRight,
-}
- from "lucide-react";
- import doctors from "../assets/data";
-// import doc1 from "../assets/doctorsimg/doc1.jpg";
-// import doc2 from "../assets/doctorsimg/doc2.jpg";
-// import doc3 from "../assets/doctorsimg/doc3.jpg";
-// import doc4 from "../assets/doctorsimg/doc4.jpg";
-import { useNavigate } from 'react-router-dom'
-import Card from "./Card";
+import { Star, Clock3, MapPin, BadgeCheck } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-
-
-const TopRatedDoctors = () => {
-
-        const navigate = useNavigate();
-  
-
+const SingleCard = ({ doctors: doctorsList = [] }) => {
+  const navigate = useNavigate();
 
   return (
-    <section className="bg-[#f7f9fc] py-20 px-6 md:px-45">
-      {/* Header */}
-      <div className="flex justify-between items-center mb-12">
-        <div>
-          <p className="text-blue-400 font-semibold uppercase text-sm tracking-wider">
-            Our Specialists
-          </p>
-
-          <h3 className="text-3xl font-semibold text-slate-900 mt-1">
-            Top Rated Doctors
-          </h3>
-        </div>
-
-        <button onClick={()=>navigate("/findDoctors")} className="flex items-center gap-2 text-sm text-blue-600 font-medium hover:text-blue-700">
-          View All
-          <ArrowRight size={15} />
-        </button>
-      </div>
-
+    <>
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
-        {doctors.slice(0,4).map((doctor, index) => (
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {doctorsList.map((doctor, index) => (
           <div
             key={index}
             className="bg-white rounded-3xl border border-slate-200 p-5 shadow-sm hover:shadow-lg  shadow-blue-200 transition hover:scale-1.5"
@@ -75,10 +40,7 @@ const TopRatedDoctors = () => {
                 </p>
 
                 <div className="flex items-center gap-1 mt-2">
-                  <Star
-                    size={14}
-                    className="fill-yellow-400 text-yellow-400"
-                  />
+                  <Star size={14} className="fill-yellow-400 text-yellow-400" />
                   <span className="font-normal text-sm">{doctor.rating}</span>
                   <span className="text-slate-500 text-sm ">
                     ({doctor.reviews} reviews)
@@ -103,9 +65,7 @@ const TopRatedDoctors = () => {
             {/* Fee */}
             <div className="flex justify-between items-center mt-8">
               <div>
-                <p className="text-slate-500 text-xs">
-                  Consultation Fee
-                </p>
+                <p className="text-slate-500 text-xs">Consultation Fee</p>
 
                 <h4 className="text-sm font-semibold text-slate-900">
                   {doctor.fee}
@@ -125,20 +85,25 @@ const TopRatedDoctors = () => {
 
             {/* Buttons */}
             <div className="flex gap-4 mt-5">
-              <button onClick={()=>navigate(`/doctor-profile/${doctor.id}`)} className="flex-1 text-sm border border-blue-600 text-blue-600 py-2 rounded-2xl font-medium hover:bg-blue-50 ">
+              <button
+                onClick={() => navigate(`/doctor-profile/${doctor.id}`)}
+                className="flex-1 text-sm border border-blue-600 text-blue-600 py-2 rounded-2xl font-medium hover:bg-blue-50 "
+              >
                 View Profile
               </button>
 
-              <button onClick={()=>navigate(`/book-appointment/${doctor.id}`)} className="flex-1  text-sm bg-blue-600 text-white py-2 rounded-2xl font-medium hover:bg-blue-700">
+              <button
+                onClick={() => navigate("/book-appointment")}
+                className="flex-1  text-sm bg-blue-600 text-white py-2 rounded-2xl font-medium hover:bg-blue-700"
+              >
                 Book Now
               </button>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </>
   );
 };
 
-
-export default TopRatedDoctors
+export default SingleCard;

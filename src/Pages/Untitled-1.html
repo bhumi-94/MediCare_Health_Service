@@ -1,0 +1,38 @@
+{/* forms and Cards */}
+      <div className='w-full py-9 gap-3 lg:pl-30 lg:pr-30 md:pl-10 md:pr-10 pr-5 pl-5 shadow-md '>
+        {/* right section */}
+        <div className='bg-white border border-gray-200  hover:shadow-md shadow-blue-200 rounded-xl p-5'>
+          <div className='flex justify-between mb-4'>
+            <span className='text-bold'>Filters</span><button className='text-xs text-blue-500'>Reset All</button>
+          </div>
+          
+          <h2 className='text-sm text-gray-400 font-semibold'>SPECIALTY</h2>
+          <div className='mt-2 font-semibold '>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>All</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Cardiology</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Dermatology</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Orthopedics</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Neurology</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Pediatrics</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>ENT</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Ophthalmology</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Gynecology</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Psychiatry</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Dentistry</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Urology</button>
+            <button className='block border m-1 border-blue-100 text-gray-400 text-[16px] rounded-2xl w-full text-left pl-3 py-1.5'>Oncology</button>
+          </div>
+        </div> 
+        <div className='flex'>
+            <div className='flex justify-between items-center mb-4'>
+            <span className='text-bold'>15 doctors found</span>
+          </div>
+        </div>
+        <div className='grid grid-cols-1 md:grid-col-2 xl:grid-cols-3 gap-6'> 
+          <SingleCard />
+
+        </div>
+        {/* <div className='w-full gap-3 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1'>
+          <SingleCard />
+        </div> */}
+      </div>

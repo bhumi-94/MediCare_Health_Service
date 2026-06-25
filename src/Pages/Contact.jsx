@@ -1,19 +1,22 @@
 import React from "react";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 
 
 function Contact() {
   return (
-    <div className="font-sans bg-gray-50 min-h-screen">
+    <>
+    <Navbar />
+    <div className=" bg-blue-50 ">
 
       {/* yaha per mai header banaya hu   */}
-      <div className="bg-blue-500 text-white text-center py-9 shadow-md">
-        <h1 className="text-3xl font-bold">Please contact the doctor</h1>
-        <p className="mt-2">
-          any Queary the Doctor and Patient releted <br />
-          Our support team is available Monday–Friday, 9 AM to 6 PM IST
+      <div className="bg-blue-500 text-white text-center py-9 h-60 shadow-md ">
+        <h2 className="mt-10 text-xl text-blue-200">Contact Us</h2>
+        <p className="mt-3 font-semibold text-3xl">
+          We'd Love to Hear from You
         </p>
+        <p className="mt-2 text-base text-blue-200">Our support team is available Monday–Friday, 9 AM to 6 PM IST.</p>
       </div>
 
       {
@@ -22,30 +25,30 @@ function Contact() {
       
       */}
 
-      <div className="max-w-7xl mx-auto mt-11 md:flex md:gap-12">
-        <div className="md:w-1/2 space-y-7">
-          <div className="border p-5 rounded-lg hover:scale-101 transition cursor-pointer" >
-            <h3 className="text-blue-600 font-semibold">EMAIL US</h3>
-            <p className="font-bold">support@medicare.health</p>
-            <span className="text-gray-600 text-sm">We reply within 24 hours</span>
+      <div className="max-w-7xl mx-auto  mb-10 md:flex md:px-5 sm:px-5 md:gap-12 justify-center mt-20">
+        <div className="md:w-1/4 space-y-4 ">
+          <div className="border border-gray-200 shadow-md p-5 bg-white rounded-2xl hover:scale-101 transition cursor-pointer" >
+            <p className="text-gray-500 text-xs ">EMAIL US</p>
+            <p className="font-medium">support@medicare.health</p>
+            <span className="text-gray-500 text-xs">We reply within 24 hours</span>
           </div>
 
-          <div className="border p-5 rounded-lg hover:scale-101 transition cursor-pointer">
-            <h3 className="text-blue-600 font-semibold">CALL US</h3>
-            <p className="font-bold">+91 98765 43210</p>
-            <span className="text-gray-600 text-sm">Mon–Fri, 9 AM – 6 PM IST</span>
+          <div className="border border-gray-200 shadow-md p-5 bg-white rounded-2xl hover:scale-101 transition cursor-pointer">
+            <h3 className="text-gray-500 text-xs">CALL US</h3>
+            <p className="font-medium">+91 98765 43210</p>
+            <span className="text-gray-500 text-xs">Mon–Fri, 9 AM – 6 PM IST</span>
           </div>
 
-          <div className="border p-5 rounded-lg hover:scale-101 transition cursor-pointer">
-            <h3 className="text-blue-600 font-semibold">VISIT US</h3>
-            <p className="font-bold">42 MediCare Lane, Health District</p>
-            <span className="text-gray-600 text-sm">Mumbai, Maharashtra 400001</span>
+          <div className="border border-gray-200 shadow-md p-5 bg-white rounded-2xl hover:scale-101 transition cursor-pointer">
+            <h3 className="text-gray-500 text-xs">VISIT US</h3>
+            <p className="font-medium">42 MediCare Lane, Health District</p>
+            <span className="text-gray-500 text-xs">Mumbai, Maharashtra 400001</span>
           </div>
 
-          <div className="border p-5 rounded-lg hover:scale-101 transition cursor-pointer">
-            <h3 className="text-blue-600 font-semibold">WORKING HOURS</h3>
-            <p className="font-bold">Mon–Fri: 9:00 AM – 6:00 PM</p>
-            <span className="text-gray-600 text-sm">Weekends: Emergency only</span>
+          <div className="border border-gray-200 shadow-md p-5 bg-white rounded-2xl hover:scale-101 transition cursor-pointer">
+            <h3 className="text-gray-500 text-xs">WORKING HOURS</h3>
+            <p className="font-medium">Mon–Fri: 9:00 AM – 6:00 PM</p>
+            <span className="text-gray-500 text-xs">Weekends: Emergency only</span>
           </div>
         </div>
 
@@ -57,23 +60,23 @@ function Contact() {
         */
         }
 
-        <div className="md:w-1/2 bg-white shadow-lg rounded-lg p-8 mt-8 md:mt-0">
-          <h2 className="text-blue-600 text-xl font-bold mb-6">Send Us a Message</h2>
-          <form className="space-y-4">
+        <div className="md:w-1/2 bg-white shadow-lg rounded-2xl p-8 mt-8 md:mt-0">
+          <h2 className="text-black-600 text-xl font-semibold mb-6">Send Us a Message</h2>
+          <form className="space-y-4 ">
             <div>
-              <label className="block text-gray-700 mb-1 ">Full Name</label>
+              <label className="block text-gray-600 mb-1">Full Name</label>
               <input
                 type="text"
-                placeholder="Enter your name"
-                className="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Your full name"
+                className="w-full   bg-blue-50 border-0 rounded-2xl p-3 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-300"
               />
             </div>
             <div>
               <label className="block text-gray-700 mb-1">Email Address</label>
               <input
                 type="email"
-                placeholder="Enter your email"
-                className="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="your@eamil.com"
+                className="w-full bg-blue-50 border-0 rounded-2xl p-3 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-300"
               />
             </div>
             <div>
@@ -81,7 +84,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="How can we help you?"
-                className="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full  bg-blue-50 border-0 rounded-2xl p-3 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-300"
               />
             </div>
             <div>
@@ -89,14 +92,14 @@ function Contact() {
               <textarea
                 rows="5"
                 placeholder="Describe your query in detail..."
-                className="w-full border rounded-md p-3 focus:outline focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                className="w-full  bg-blue-50 border-0 rounded-2xl p-3 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-300"
               ></textarea>
             </div>
             <button
               type="button"
-              className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition w-full"
+              className=" w-1/3 bg-blue-500 font-semibold text-white px-6 py-3 rounded-2xl hover:bg-blue-700 transition "
             >
-              Send information
+              Send Message
             </button>
 
             
@@ -105,10 +108,12 @@ function Contact() {
         </div>
       </div>
       <br />
-      {/*  ab yaha mai footer component use kar raha hu  */}
-       <Footer/>
+     
     </div>
-   
+     
+
+    <Footer /> 
+   </>
   );
 }
 

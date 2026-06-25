@@ -98,18 +98,14 @@ const Categories = () => {
             <section className="py-16 lg:py-24">
              
                 <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="mb-10 text-center">
+                    <div className="mb-5 text-center">
                         <div className="inline-flex flex-col gap-3 items-center">
                             <p className="max-w-2xl [word-spacing:0.2rem] text-base  text-blue-500">
                                 BROWSE BY SPECIALTY
                             </p>
-                            <h2 className="text-3xl font-medium tracking-tight text-slate-900 sm:text-4xl">
-                                Medical Specialties
-                            </h2>
-                            
                         </div>
                     </div>
-                    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                     {specialties.map((item, index) => (
                       <button
                         key={index}

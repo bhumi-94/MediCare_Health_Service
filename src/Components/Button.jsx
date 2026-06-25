@@ -3,11 +3,11 @@ import React from 'react'
 const Button = () => {
   return (
     <>
-    
-    <button className="cursor-pointer px-6 py-2 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm">
-                    Login
-    </button>
-    
+
+    <button onClick={()=>navigate("")} className="active:scale-95 hover:bg-indigo-50/50 transition px-4 py-2 border border-indigo rounded-md text-slate-800 cursor-pointer">
+                    
+                </button>
+
     </>
   )
 }
