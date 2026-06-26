@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { BadgeCheck, Star } from "lucide-react"
 import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
 
 const DoctorProfile = () => {
     const navigate = useNavigate();
@@ -18,7 +19,8 @@ const DoctorProfile = () => {
     return <h1 className="p-6 text-center text-xl font-semibold">Doctor Not Found</h1>;
   }
 
-  return (
+  return (<>
+    <Navbar />
     <div className="min-h-screen bg-slate-50">
       <div className="bg-blue-600 px-4 py-6 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
@@ -94,6 +96,7 @@ const DoctorProfile = () => {
 
         </div>
     </div>
+    </>
   )
 }
 

@@ -125,11 +125,11 @@ const TopRatedDoctors = () => {
 
             {/* Buttons */}
             <div className="flex gap-4 mt-5">
-              <button onClick={()=>navigate(`/doctor-profile/${doctor.id}`)} className="flex-1 text-sm border border-blue-600 text-blue-600 py-2 rounded-2xl font-medium hover:bg-blue-50 ">
+              <button onClick={()=>navigate(`/doctor-profile/${doctor.id}`,window.scrollTo({top: 0,left: 0, behavior: "smooth"}))} className="flex-1 text-sm border border-blue-600 text-blue-600 py-2 rounded-2xl font-medium hover:bg-blue-50 ">
                 View Profile
               </button>
 
-              <button onClick={()=>navigate(`/book-appointment/${doctor.id}`)} className="flex-1  text-sm bg-blue-600 text-white py-2 rounded-2xl font-medium hover:bg-blue-700">
+              <button onClick={()=>navigate(`/book-appointment/${doctor.id}`,window.scrollTo({top: 0,left: 0, behavior: "smooth"}))} className="flex-1  text-sm bg-blue-600 text-white py-2 rounded-2xl font-medium hover:bg-blue-700">
                 Book Now
               </button>
             </div>

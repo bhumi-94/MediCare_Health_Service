@@ -74,6 +74,7 @@ const Login = () => {
             <button
               type="submit"
               className="w-full mb-3 bg-primary py-2.5 rounded-xl text-white"
+              onClick={()=>navigate("/")}
             >
               Sign in
             </button>
@@ -84,7 +85,7 @@ const Login = () => {
               Signup
             </a>
           </p>
-          <hr className="bg-gray-100 mt-4 h-0.5 " />
+          {/* <hr className="bg-gray-100 mt-4 h-0.5 " />
           <p className="text-center mt-4 text-sm">Quick access demo:</p>
 
           <div className="flex  gap-2 mt-5 ">
@@ -99,8 +100,8 @@ const Login = () => {
               className="flex-1 flex items-center justify-center gap-2 py-2.5 border-0 rounded-2xl text-sm bg-green-50 text-green-400"
             >
               Patient Dashboard
-            </button>
-          </div>
+            </button> */}
+          {/* </div> */}
         </div>
       </div>
     </>

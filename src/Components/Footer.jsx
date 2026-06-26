@@ -5,7 +5,7 @@ const Footer = () => {
     const links = [
         {
             title: "Quick Links",
-            items: [{ name: "Find Doctors", href: "/findDoctors" }, { name: "Book Appointment", href: "/book-appointment" }, { name: "About Us", href: "/about" }, { name: "Contact Us", href: "/contact" }],
+            items: [{ name: "Find Doctors", href: "/findDoctors" }, { name: "About Us", href: "/about" }, { name: "Contact Us", href: "/contact" }],
         },
         {
             title: "Specialties",

@@ -13,6 +13,7 @@ import BookAppointment from './Pages/BookAppointment'
 import PatientDashboard from './Pages/PatientDashboard'
 import DoctorDashboard from './Pages/DoctorDashboard'
 import AccountCreated from './Components/AccountCreated'
+import ConfirmAppointment from './Components/ConfirmAppointment'
 
 
 
@@ -23,20 +24,20 @@ const App = () => {
       
     
     <Routes>
-`     <Route path='/' element={ <Home />}/>
-`     <Route path='/about' element={<About /> }/>
-`     <Route path='/contact' element={ <Contact />}/>
-`     <Route path='/findDoctors' element={ <FindDoctors />}/>
-`     <Route path='/doctor-profile/:doctorId' element={ <DoctorProfile />}/>
-`     <Route path='/login' element={ <Login />}/>
-`     <Route path='/sign-up' element={ <SignUp />}/>
-`     <Route path='/book-appointment' element={ <BookAppointment />}/>
-`     <Route path='/book-appointment/:doctorId' element={ <DoctorProfile />}/>
-`     <Route path='/patient-dashboard' element={ <PatientDashboard />}/>
-`     <Route path='/doctor-dashboard' element={ <DoctorDashboard />}/>
-`     <Route path='/specialities' element={ <Specialities />}/>
-`     <Route path='/account-created' element={ <AccountCreated />}/>
-`    
+      <Route path='/' element={ <Home />}/>
+      <Route path='/about' element={<About /> }/>
+      <Route path='/contact' element={ <Contact />}/>
+      <Route path='/findDoctors' element={ <FindDoctors />}/>
+      <Route path='/doctor-profile/:doctorId' element={ <DoctorProfile />}/>
+      <Route path='/login' element={ <Login />}/>
+      <Route path='/sign-up' element={ <SignUp />}/>
+      <Route path='/book-appointment' element={ <BookAppointment />}/>
+      <Route path='/book-appointment/:doctorId' element={ <BookAppointment />}/>
+      <Route path='/patient-dashboard' element={ <PatientDashboard />}/>
+      <Route path='/doctor-dashboard' element={ <DoctorDashboard />}/>
+      <Route path='/specialities' element={ <Specialities />}/>
+      <Route path='/account-created' element={ <AccountCreated />}/>
+      <Route path='/confirm-appointment' element={ <ConfirmAppointment />}/>
     </Routes>
 
     </div>

@@ -35,7 +35,7 @@ const Hero = () => {
       </p>
       
       <div className="flex items-center gap-4 mt-5 justify-center z-1">
-        <button onClick={()=>navigate(`/specialities`)} className="bg-[var(--primary-color)] hover:bg-blue-600 text-white px-6 py-3 rounded-full cursor-pointer">Book Appointment</button>
+        <button onClick={()=>navigate(`/specialities`)} className="bg-[var(--primary-color)] hover:bg-blue-600 text-white px-6 py-3 rounded-full cursor-pointer">Search Specialities</button>
         <button onClick={()=>navigate("/findDoctors")} className="flex items-center gap-2 text-[var(--primary-color)] border border-blue-600 hover:bg-indigo-50/50 px-6 py-3 rounded-full active:scale-95 transition cursor-pointer">
         
           Find Doctors

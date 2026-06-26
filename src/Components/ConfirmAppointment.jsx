@@ -1,11 +1,13 @@
-import React from "react";
-import Logo from "../assets/logo";
+import React from 'react'
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/logo";
 
-const AccountCreated = () => {
-  const navigate = useNavigate();
+
+
+const ConfirmAppointment = () => {
+    const navigate = useNavigate();
   return (
-    <>
+   <>
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-[#e8f0fe] via-[#f0f7ff] to-[#e8f5e9]">
         {/* card
          */}
@@ -20,23 +22,23 @@ const AccountCreated = () => {
           </div>
 
           <div className="text-center">
-            <h1 className="text-2xl font-semibold">Account Created!! </h1>
+            <h1 className="text-2xl font-semibold">Appointment Confirmed!! </h1>
             <p className="mt-2 text-gray-500">
-              Welcome to MediCare! Please log in to continue.
+              Stay With MediCare
             </p>
           </div>
 
           <button
             type="submit"
             className="w-full mb-3 mt-4 bg-primary py-2.5 rounded-xl text-white"
-            onClick={() => navigate("/login")}
+            onClick={() => navigate('/')}
           >
-            Go to Login
+            Back to Home
           </button>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default AccountCreated;
+export default ConfirmAppointment

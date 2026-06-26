@@ -4,10 +4,12 @@ import {
   Clock3,
   MapPin,
   BadgeCheck,
-  ArrowRight,
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 import doctors from '../assets/data'
 const Card = () => {
+  const navigate = useNavigate();
+
   return (
     <>
     {/* Cards */}
@@ -91,12 +93,12 @@ const Card = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-4 mt-5">
-              <button onClick={()=>navigate("/findDoctors/:docid")} className="flex-1 text-sm border border-blue-600 text-blue-600 py-2 rounded-2xl font-medium hover:bg-blue-50 ">
+            <div className="mt-5 flex flex-wrap gap-2">
+              <button onClick={() => navigate(`/doctor-profile/${doctor.id}`)} className="flex-1 min-w-[110px] text-sm border border-blue-600 text-blue-600 py-2 rounded-2xl font-medium hover:bg-blue-50 ">
                 View Profile
               </button>
 
-              <button onClick={()=>navigate("/book-appointment")} className="flex-1  text-sm bg-blue-600 text-white py-2 rounded-2xl font-medium hover:bg-blue-700">
+              <button onClick={() => navigate(`/book-appointment/${doctor.id}`)} className="flex-1 min-w-[110px] text-sm bg-blue-600 text-white py-2 rounded-2xl font-medium hover:bg-blue-700">
                 Book Now
               </button>
             </div>
