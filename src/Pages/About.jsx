@@ -3,6 +3,10 @@ import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import StatsSection from "../Components/StatsSection";
 import Navbar from "../Components/Navbar";
+import avt2 from "../assets/avt2.jpg";
+import avt4 from "../assets/avt4.jpg";
+import avt1 from "../assets/avt1.jpg";
+import team from "../assets/team.jpg";
 
 const About = () => {
   const navigate = useNavigate();
@@ -63,7 +67,7 @@ const About = () => {
         {/* Second child div */}
         <div className="lg:h-80 lg:w-120  md:h-80 md:w-120 h-60 w-auto bg-white object-cover flex justify-center items-center shadow-lg  cursor-pointer rounded-lg">
           <img
-            src="/src/assets/Wutsi.jpg"
+            src={team}
             alt="Healthcare"
             className="h-full  rounded-lg shadow-lg w-full"
           />
@@ -119,7 +123,7 @@ const About = () => {
             <div className="group shadow-lg flex flex-col items-center py-8 text-sm bg-white border border-gray-300/60 w-64 rounded-md cursor-pointer hover:scale-105 duration-500 transition  ">
               <img
                 className="w-24 rounded-full overflow-hidden"
-                src="/src/assets/avt4.jpg"
+                src={avt4}
                 alt="userImage1"
               />
               <h2 className="text-gray-700 text-lg font-medium mt-2">
@@ -136,7 +140,7 @@ const About = () => {
             <div className="group shadow-lg flex flex-col items-center py-8 text-sm bg-white border border-gray-300/60 w-64 rounded-md cursor-pointer hover:scale-105 duration-500 transition ">
               <img
                 className="w-24 rounded-full"
-                src="/src/assets/avt2.jpg"
+                src={avt2}
                 alt="userImage1"
               />
               <h2 className="text-gray-700 text-lg font-medium mt-2">
@@ -153,7 +157,7 @@ const About = () => {
             <div className="group shadow-lg flex flex-col items-center py-8 text-sm bg-white border border-gray-300/60 w-64 rounded-md cursor-pointer hover:scale-105 duration-500 transition  ">
               <img
                 className="w-24 rounded-full"
-                src="/src/assets/avt1.jpg"
+                src={avt1}
                 alt="userImage1"
               />
               <h2 className="text-gray-700 text-lg font-medium mt-2">

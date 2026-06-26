@@ -1,9 +1,9 @@
 import React from "react";
 import { BadgeCheck, Star } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
-import doctors from "../assets/data";
 import Footer from "../Components/Footer";
 import Navbar from '../Components/Navbar'
+
 
 
 const parseFee = (fee) => {

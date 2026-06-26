@@ -1,6 +1,9 @@
 import React from "react";
 import Logo from "../assets/logo";
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom'
+import doctors from "../assets/data";
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -81,9 +84,9 @@ const Login = () => {
           </form>
           <p className="text-center mt-4">
             Don’t have an account?{" "}
-            <a href="/sign-up" className="text-primary none">
+            <Link to='/sign-up' className="text-primary none">
               Signup
-            </a>
+            </Link>
           </p>
           {/* <hr className="bg-gray-100 mt-4 h-0.5 " />
           <p className="text-center mt-4 text-sm">Quick access demo:</p>
