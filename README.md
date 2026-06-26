@@ -176,22 +176,6 @@ During this project I improved my knowledge of:
 
 ---
 
-# 📸 Screenshots
-
-> Add screenshots of your Homepage, Doctors Page, Appointment Page, and Contact Section here.
-
-Example:
-
-```
-screenshots/
-   home.png
-   doctors.png
-   appointment.png
-   contact.png
-```
-
----
-
 # 🤝 Contributing
 
 Contributions are always welcome!
